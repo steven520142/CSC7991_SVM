@@ -111,22 +111,6 @@ IMDB_Test_X_Tfidf = Tfidf_vect.transform(IMDB_Test_X)
 
 
 # Step - 5: Now we can run different algorithms to classify out data check for accuracy
-
-# Classifier - Algorithm - Naive Bayes
-# fit the training dataset on the classifier
-#Naive = naive_bayes.MultinomialNB()
-#Naive.fit(Train_X_Tfidf,Train_Y)
-
-# predict the labels on validation dataset
-#predictions_NB = Naive.predict(Test_X_Tfidf)
-
-# Use accuracy_score function to get the accuracy
-#print("Naive Bayes Accuracy Score -> ",accuracy_score(predictions_NB, Test_Y)*100)
-
-
-# Classifier - Algorithm - SVM
-
-
 # fit the training dataset on the classifier (C=0.5)
 SVM = svm.SVC(C=1.0, kernel='linear', degree=3, gamma='auto')
 SVM.fit(Train_X_Tfidf,Train_Y)
